@@ -1,0 +1,16 @@
+/* This needs to be hosted in the same place as the webpage */
+@font-face {
+  font-family: spark;
+  src: url(spark-bar-medium.woff);
+}
+
+span {
+    font-family: spark;
+  font-size: 34px;
+}
+.class {
+  font-variant-ligatures: contextual;
+  -moz-font-feature-settings: "calt";
+  -webkit-font-feature-settings: "calt";
+  font-feature-settings: "calt";
+} /* see https://github.com/aftertheflood/spark */
