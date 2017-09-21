@@ -3,7 +3,24 @@ Tutorial for using the Spark font for creating sparklines in text
 
 Spark [is](https://github.com/paulbradshaw/spark) "a typeface for creating sparklines in text". The [GitHub repo](https://github.com/aftertheflood/spark) is useful, but assumes some prior knowledge. This tutorial is designed to explain how to use it if you're not already familiar with web fonts and other technicalities of web design.
 
+## Breaking down the elements
+
+To create a webpage using Spark you need the following ingredients:
+
+1. A HTML page. Specifically, we need to make sure that part of the HTML includes some numbers that the font can work with.
+2. A CSS file. The CSS file is what 'styles' part of the HTML into the Spark font.
+3. The Spark font. This needs to be downloaded from the Spark GitHub repo's ['Output/fonts' folder](https://github.com/paulbradshaw/spark/tree/master/Output/Webfonts) and stored in the same place as the CSS file.
+
 ## How to use fonts in a webpage
+
+To use this font in the webpage we need to add a line at the top of the CSS file: 
+
+```css
+@font-face {
+  font-family: spark;
+  src: url(spark-bar-medium.woff);
+}
+```
 
 ## The quick version
 
