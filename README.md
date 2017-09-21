@@ -5,11 +5,31 @@ Spark [is](https://github.com/paulbradshaw/spark) "a typeface for creating spark
 
 ## Breaking down the elements
 
-To create a webpage using Spark you need the following ingredients:
+To create a webpage with a Spark chart you need the following ingredients:
 
 1. A HTML page. Specifically, we need to make sure that part of the HTML includes some numbers that the font can work with.
 2. A CSS file. The CSS file is what 'styles' part of the HTML into the Spark font.
 3. The Spark font. This needs to be downloaded from the Spark GitHub repo's ['Output/fonts' folder](https://github.com/paulbradshaw/spark/tree/master/Output/Webfonts) and stored in the same place as the CSS file.
+
+## Creating the HTML page
+
+Let's make the HTML page first. I've created mine using the text editor Atom, and saved it as 'index.html'.
+
+```html
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Sparklines font</title>
+      <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <p>There were 70 Airprox reports involving drones coming close to aircraft over the UK in 2016 - compared to 29 in 2015 and just 6 in 2014. There were no incidents at all between 2011 and 2013: <span class="barchart">2010 {4,0,0,0,6,29,70} 2016</span>. There have been 33 incidents up to May 2017. </p>
+  <p>That chart above is created using the font Spark: each bar of the chart is actually a number.</p>
+  <p> The font to turn it into a chart needs to be stored in the same place as the CSS file.</p>
+</body>
+</html>
+```
 
 ## How to use fonts in a webpage
 
