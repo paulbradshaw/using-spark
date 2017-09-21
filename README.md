@@ -1,6 +1,6 @@
-# Tutorial: using the Spark font for creating sparklines in text
+# Tutorial: using the AtF Spark font for creating sparklines in text
 
-Spark is "a typeface for creating sparklines in text". The [GitHub repo](https://github.com/aftertheflood/spark) is useful, but assumes some prior knowledge. This tutorial is designed to explain how to use it if you're not already familiar with web fonts and other technicalities of web design.
+AtF Spark is "a typeface for creating sparklines in text" created by After The Flood. The [GitHub repo](https://github.com/aftertheflood/spark) is useful, but assumes some prior knowledge. This tutorial is designed to explain how to use it if you're not already familiar with web fonts and other technicalities of web design.
 
 ## Breaking down the elements
 
@@ -8,7 +8,7 @@ To create a webpage with a Spark chart you need the following ingredients:
 
 1. A HTML page. Specifically, we need to make sure that part of the HTML includes some numbers that the font can work with.
 2. A CSS file (style sheet). The CSS file is what 'styles' part of the HTML into the Spark font.
-3. The Spark font. This needs to be downloaded from the Spark GitHub repo's ['Output/fonts' folder](https://github.com/paulbradshaw/spark/tree/master/Output/Webfonts) and stored in the same place as the CSS file.
+3. One of the AtF Spark fonts. This needs to be downloaded from the Spark GitHub repo's ['Output/fonts' folder](https://github.com/paulbradshaw/spark/tree/master/Output/Webfonts) and stored in the same place as the CSS file.
 4. Links between all three: the HTML file needs to link to the CSS style sheet file, and the CSS style sheet needs to link to the font file.
 
 ## Creating the HTML page
