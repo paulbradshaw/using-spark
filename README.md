@@ -1,26 +1,36 @@
-# using-spark
-Tutorial for using the Spark font for creating sparklines in text
+# Tutorial: using the Spark font for creating sparklines in text
 
-Spark [is](https://github.com/paulbradshaw/spark) "a typeface for creating sparklines in text". The [GitHub repo](https://github.com/aftertheflood/spark) is useful, but assumes some prior knowledge. This tutorial is designed to explain how to use it if you're not already familiar with web fonts and other technicalities of web design.
+Spark is "a typeface for creating sparklines in text". The [GitHub repo](https://github.com/aftertheflood/spark) is useful, but assumes some prior knowledge. This tutorial is designed to explain how to use it if you're not already familiar with web fonts and other technicalities of web design.
 
 ## Breaking down the elements
 
 To create a webpage with a Spark chart you need the following ingredients:
 
 1. A HTML page. Specifically, we need to make sure that part of the HTML includes some numbers that the font can work with.
-2. A CSS file. The CSS file is what 'styles' part of the HTML into the Spark font.
+2. A CSS file (style sheet). The CSS file is what 'styles' part of the HTML into the Spark font.
 3. The Spark font. This needs to be downloaded from the Spark GitHub repo's ['Output/fonts' folder](https://github.com/paulbradshaw/spark/tree/master/Output/Webfonts) and stored in the same place as the CSS file.
+4. Links between all three: the HTML file needs to link to the CSS style sheet file, and the CSS style sheet needs to link to the font file.
 
 ## Creating the HTML page
 
-Let's make the HTML page first. I've created mine using the text editor Atom, and saved it as 'index.html'.
+Let's make the HTML page first. I've created mine using the text editor Atom, and saved it as 'index.html'. The full HTML is below, but the key thing is that it needs to have a section that contains a series of numbers separated by commas, like so: 
+
+`<span class="barchart">2010 {4,0,0,0,6,29,70} 2016</span>`
+
+The example above also has a `<span>` tag with a `class` attribute. This means we can *target*, or rather *select*, the text inside with a style sheet, in the second step. 
+
+First, we need to make sure that there is a link to that style sheet. Here it is, inside the `<head>` tags:
+
+`<link rel="stylesheet" href="css/style.css">`
+
+If you want to save time, here's the full HTML for a page including the numbers, and a link to the stylesheet we're about to create.
 
 ```html
 <!DOCTYPE html>
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>Sparklines font</title>
+  <title>Spark font example</title>
       <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
