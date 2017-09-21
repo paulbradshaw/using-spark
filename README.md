@@ -131,4 +131,6 @@ The quickest way of achieving the results above is to:
 4. Put that file in the `css` folder
 5. The chart should now be working based on the numbers in curly brackets on the HTML page. Just change those numbers to change the text - or copy and paste it (including the `<span>` ) to create new charts.
 
+You can also find a webpage and stylesheets in the '/docs' folder of this repo, which generates a websites at [https://paulbradshaw.github.io/using-spark/](https://paulbradshaw.github.io/using-spark/)
+
 *Note: At the moment it is "compatible with Microsoft Word (2011 and later), Adobe Creative Cloud applications, Chrome 33+, Safari 6+, Firefox 4+, and Internet Explorer 10+. (See: http://stateofwebtype.com/ for a fuller listing of browser compatibility.)"*
