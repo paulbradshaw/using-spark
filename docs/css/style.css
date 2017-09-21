@@ -2,15 +2,123 @@
 @font-face {
   font-family: spark;
   src: url(spark-bar-medium.woff);
-}
-
-span {
-    font-family: spark;
-  font-size: 34px;
-}
-.class {
   font-variant-ligatures: contextual;
   -moz-font-feature-settings: "calt";
   -webkit-font-feature-settings: "calt";
   font-feature-settings: "calt";
-} /* see https://github.com/aftertheflood/spark */
+}
+@font-face {
+  font-family: sparkline;
+  src: url(spark-dotline-medium.woff);
+  font-variant-ligatures: contextual;
+  -moz-font-feature-settings: "calt";
+  -webkit-font-feature-settings: "calt";
+  font-feature-settings: "calt";
+}
+
+@font-face {
+  font-family: sparkdot;
+  src: url(spark-dot-medium.woff);
+  font-variant-ligatures: contextual;
+  -moz-font-feature-settings: "calt";
+  -webkit-font-feature-settings: "calt";
+  font-feature-settings: "calt";
+}
+@font-face {
+  font-family: sparkdotsmall;
+  src: url(spark-dot-small.woff);
+  font-variant-ligatures: contextual;
+  -moz-font-feature-settings: "calt";
+  -webkit-font-feature-settings: "calt";
+  font-feature-settings: "calt";
+}
+@font-face {
+  font-family: sparknarrow;
+  src: url(spark-bar-narrow.woff);
+  font-variant-ligatures: contextual;
+  -moz-font-feature-settings: "calt";
+  -webkit-font-feature-settings: "calt";
+  font-feature-settings: "calt";
+}
+@font-face {
+  font-family: sparkthin;
+  src: url(spark-bar-thin.woff);
+  font-variant-ligatures: contextual;
+  -moz-font-feature-settings: "calt";
+  -webkit-font-feature-settings: "calt";
+  font-feature-settings: "calt";
+}
+
+span.barchart {
+    font-family: spark;
+  font-size: 24px;
+  color: orange;
+}
+span.linechart {
+    font-family: sparkline;
+  font-size: 24px;
+  color: orange;
+}
+span.dotchart {
+    font-family: sparkdot;
+  font-size: 24px;
+  color: orange;
+}
+span.dotchartsmall {
+    font-family: sparkdotsmall;
+  font-size: 24px;
+  color: orange;
+}
+span.barchartthin {
+    font-family: sparkthin;
+  font-size: 24px;
+  color: orange;
+}
+span.barchartnarrow {
+    font-family: sparknarrow;
+  font-size: 24px;
+  color: orange;
+}
+body {
+  font-family: arial;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: #F09A9D; /* Red */
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .sign-up,
+  .feature-1,
+  .feature-2,
+  .feature-3 {
+    width: 50%;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .page {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .feature-1,
+  .feature-2,
+  .feature-3 {
+    width: 33.3%;
+  }
+  .header {
+    height: 400px;
+  }
+  .sign-up {
+    height: 200px;
+    order: 1;
+  }
+  .content {
+    order: 2;
+  }
+}
