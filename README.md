@@ -1,7 +1,9 @@
 # using-spark
 Tutorial for using the Spark font for creating sparklines in text
 
-Spark [is](https://github.com/paulbradshaw/spark) "a typeface for creating sparklines in text". The GitHub repo is useful, but assumes some prior knowledge. This tutorial is designed to explain how to use it if you're not already familiar with web fonts and other technicalities of web design.
+Spark [is](https://github.com/paulbradshaw/spark) "a typeface for creating sparklines in text". The [GitHub repo](https://github.com/aftertheflood/spark) is useful, but assumes some prior knowledge. This tutorial is designed to explain how to use it if you're not already familiar with web fonts and other technicalities of web design.
+
+## How to use fonts in a webpage
 
 ## The quick version
 
