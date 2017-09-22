@@ -17,11 +17,11 @@ Let's make the HTML page first. I've created mine using the text editor Atom, an
 
 What HTML you put in the page doesn't really matter - but you must have a section that is going to be turned into the chart, and a link to a stylesheet.
 
-The chart section needs to include a series of numbers separated by commas, inside curly brackets, like so:
+The chart section needs to include a series of numbers separated by commas, inside **curly brackets**, like so:
 
-`<span class="barchart">2010 {4,0,0,0,6,29,70} 2016</span>`
+`<span class="barchart">4 {4,0,0,0,6,29,70} 7</span>`
 
-Note that there should be no spaces after the commas, and all numbers must be between 0 and 100, otherwise it won't work.
+Note that there should be **no spaces** after the commas, and all numbers must be between 0 and 100, otherwise it won't work. 
 
 The example above also has a `<span>` tag with a `class` attribute. This means we can *target*, or rather *select*, the text inside with a style sheet, in the second step.
 
