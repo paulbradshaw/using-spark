@@ -103,7 +103,7 @@ body {
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
   .page {
-    width: 550px;
+    width: 570px;
     margin: 0 auto;
   }
 }

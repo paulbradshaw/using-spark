@@ -14,26 +14,26 @@
 <body>
   <div class="page">
   <h1>Examples of using the Spark font for creating charts in text</h1>
-  <p>There were 70 Airprox reports involving drones coming close to aircraft over the UK in 2016 - compared to 29 in 2015 and just 6 in 2014. There were no incidents at all between 2011 and 2013: <span class="barchart">2010 {4,0,0,0,6,29,70} 2016</span>. There have been 33 incidents up to May 2017. </p>
+  <p>There were 70 Airprox reports involving drones coming close to aircraft over the UK in 2016 - compared to 29 in 2015 and just 4 in 2010 <span class="barchart">4 {4,0,0,0,6,29,70} 70</span>. There have been 33 incidents up to May 2017. </p>
   <p>That chart above is created using the font Spark: each bar of the chart is actually a number.</p>
   <p> The font to turn it into a chart needs to be stored in the same place as the CSS file.</p>
   <h2>Using other chart fonts</h2>
   <p> Here's the same sentence again but using a different font (and class attribute) to create a different chart. Notice that it doesn't work properly because the numbers aren't kept within the range 0-9 (the numbers are {4,0,0,0,6,29,70})</p>
-  <p>There were 70 Airprox reports involving drones coming close to aircraft over the UK in 2016 - compared to 29 in 2015 and just 6 in 2014. There were no incidents at all between 2011 and 2013: <span class="linechart">2010 {4,0,0,0,6,29,70} 2016</span>. There have been 33 incidents up to May 2017. </p>
+  <p>There were 70 Airprox reports involving drones coming close to aircraft over the UK in 2016 - compared to 29 in 2015 and just 4 in 2010 <span class="linechart">4 {4,0,0,0,6,29,70} 70</span>. There have been 33 incidents up to May 2017. </p>
   <p> Here it is again but with the numbers changed to {1,0,0,0,1,3,7}:</p>
-  <p>There were 70 Airprox reports involving drones coming close to aircraft over the UK in 2016 - compared to 29 in 2015 and just 6 in 2014. There were no incidents at all between 2011 and 2013: <span class="linechart">2010 {1,0,0,0,1,3,7} 2016</span>. There have been 33 incidents up to May 2017. </p>
+  <p>There were 70 Airprox reports involving drones coming close to aircraft over the UK in 2016 - compared to 29 in 2015 and just 4 in 2010 <span class="linechart">4 {1,0,0,0,1,3,7} 70</span>. There have been 33 incidents up to May 2017. </p>
   <p>Note that anything within curly brackets is turned into a bar or line or dot, depending on the font. But the year numbers either side are rendered as normal numbers, because they are outside the curly brackets. Text characters, however, won't render properly.</p>
   <h2>And the rest</h2>
   <p>Now for the medium dot chart. This one uses the same 0-100 range as the bar chart, so the original figures {4,0,0,0,6,29,70} work fine:</p>
-  <p>There were 70 Airprox reports involving drones coming close to aircraft over the UK in 2016 - compared to 29 in 2015 and just 6 in 2014. There were no incidents at all between 2011 and 2013: <span class="dotchart">2010 {4,0,0,0,6,29,70} 2016</span>. There have been 33 incidents up to May 2017. </p>
+  <p>There were 70 Airprox reports involving drones coming close to aircraft over the UK in 2016 - compared to 29 in 2015 and just 4 in 2010 <span class="dotchart">4 {4,0,0,0,6,29,70} 70</span>. There have been 33 incidents up to May 2017. </p>
   <p>With the numbers changed to {1,0,0,0,1,3,7} the difference is too small to be meaningful:</p>
-  <p>There were 70 Airprox reports involving drones coming close to aircraft over the UK in 2016 - compared to 29 in 2015 and just 6 in 2014. There were no incidents at all between 2011 and 2013: <span class="dotchart">2010 {1,0,0,0,1,3,7} 2016</span>. There have been 33 incidents up to May 2017. </p>
+  <p>There were 70 Airprox reports involving drones coming close to aircraft over the UK in 2016 - compared to 29 in 2015 and just 4 in 2010 <span class="dotchart">2010 {1,0,0,0,1,3,7} 2016</span>. There have been 33 incidents up to May 2017. </p>
   <p>Now for the small dot chart:</p>
-  <p>There were 70 Airprox reports involving drones coming close to aircraft over the UK in 2016 - compared to 29 in 2015 and just 6 in 2014. There were no incidents at all between 2011 and 2013: <span class="dotchartsmall">2010 {4,0,0,0,6,29,70} 2016</span>. There have been 33 incidents up to May 2017. </p>
+  <p>There were 70 Airprox reports involving drones coming close to aircraft over the UK in 2016 - compared to 29 in 2015 and just 4 in 2010 <span class="dotchartsmall">4 {4,0,0,0,6,29,70} 70</span>. There have been 33 incidents up to May 2017. </p>
   <p>Then the narrow bar chart:</p>
-  <p>There were 70 Airprox reports involving drones coming close to aircraft over the UK in 2016 - compared to 29 in 2015 and just 6 in 2014. There were no incidents at all between 2011 and 2013: <span class="barchartnarrow">2010 {4,0,0,0,6,29,70} 2016</span>. There have been 33 incidents up to May 2017. </p>
+  <p>There were 70 Airprox reports involving drones coming close to aircraft over the UK in 2016 - compared to 29 in 2015 and just 4 in 2010 <span class="barchartnarrow">4 {4,0,0,0,6,29,70} 70</span>. There have been 33 incidents up to May 2017. </p>
   <p>And the thin bar chart:</p>
-  <p>There were 70 Airprox reports involving drones coming close to aircraft over the UK in 2016 - compared to 29 in 2015 and just 6 in 2014. There were no incidents at all between 2011 and 2013: <span class="barchartthin">2010 {4,0,0,0,6,29,70} 2016</span>. There have been 33 incidents up to May 2017. </p>
+  <p>There were 70 Airprox reports involving drones coming close to aircraft over the UK in 2016 - compared to 29 in 2015 and just 4 in 2010 <span class="barchartthin">4 {4,0,0,0,6,29,70} 70</span>. There have been 33 incidents up to May 2017. </p>
   </div>
 </body>
 </html>
