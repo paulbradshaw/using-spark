@@ -1,5 +1,7 @@
 # Tutorial: using the AtF Spark font for creating sparklines in text
 
+*This tutorial is taken and amended from [a version on the Online Journalism Blog](https://onlinejournalismblog.com/2017/09/21/how-to-use-the-atf-spark-font-for-creating-charts-with-only-text/#more-25179)*
+
 AtF Spark is "a typeface for creating sparklines in text" created by After The Flood. The [GitHub repo](https://github.com/aftertheflood/spark) is useful, but assumes some prior knowledge. This tutorial is designed to explain how to use it if you're not already familiar with web fonts and other technicalities of web design.
 
 ## Breaking down the elements
@@ -8,7 +10,7 @@ To create a webpage with a Spark chart you need the following ingredients:
 
 1. A HTML page. Specifically, we need to make sure that part of the HTML includes some numbers that the font can work with.
 2. A CSS file (style sheet). The CSS file is what 'styles' part of the HTML into the Spark font.
-3. One of the AtF Spark fonts. This needs to be downloaded from the Spark GitHub repo's ['Output/fonts' folder](https://github.com/paulbradshaw/spark/tree/master/Output/Webfonts) and stored in the same place as the CSS file.
+3. One of the AtF Spark fonts. This needs to be downloaded from the Spark GitHub repo's ['Output/Webfonts' folder](https://github.com/aftertheflood/spark/tree/master/Output/Webfonts) and stored in the same place as the CSS file.
 4. Links between all three: the HTML file needs to link to the CSS style sheet file, and the CSS style sheet needs to link to the font file.
 
 ## Creating the HTML page
@@ -21,7 +23,7 @@ The chart section needs to include a series of numbers separated by commas, insi
 
 `<span class="barchart">4 {4,0,0,0,6,29,70} 7</span>`
 
-Note that there should be **no spaces** after the commas, and all numbers must be between 0 and 100, otherwise it won't work. 
+Note that there should be **no spaces** after the commas, and all numbers must be between 0 and 100, otherwise it won't work. Any numbers outside the brackets will be styled as normal nummbers, so those can be used as a sort of legend, to describe the start and end points of the chart.
 
 The example above also has a `<span>` tag with a `class` attribute. This means we can *target*, or rather *select*, the text inside with a style sheet, in the second step.
 
@@ -42,9 +44,9 @@ The full HTML for a page including the numbers, and a link to the stylesheet we'
       <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <p>There were 70 Airprox reports involving drones coming close to aircraft over the UK in 2016 - compared to 29 in 2015 and just 6 in 2014. There were no incidents at all between 2011 and 2013: <span class="barchart">2010 {4,0,0,0,6,29,70} 2016</span>. There have been 33 incidents up to May 2017. </p>
+  <p>There were 70 Airprox reports involving drones coming close to aircraft over the UK in 2016 - compared to 29 in 2015 and just 4 in 2010 <span class="barchart">4 {4,0,0,0,6,29,70} 70</span>. There have been 33 incidents up to May 2017. </p>
   <p>That chart above is created using the font Spark: each bar of the chart is actually a number.</p>
-  <p> The font to turn it into a chart needs to be stored in the same place as the CSS file.</p>
+  <p>The font to turn it into a chart needs to be stored in the same place as the CSS file.</p>
 </body>
 </html>
 ```
@@ -110,11 +112,11 @@ span.barchart {
 
 ## Finally, download the font file to the same place as the CSS file
 
-The Spark font can be downloaded from the Spark GitHub repo's ['Output/fonts' folder](https://github.com/paulbradshaw/spark/tree/master/Output/Webfonts). At the moment there are 6 folders in there: 3 bar chart options (medium, narrow and thin), 2 dot charts (medium and small), and 1 dot line (medium).
+The Spark font can be downloaded from the Spark GitHub repo's ['Output/Webfonts' folder](https://github.com/aftertheflood/spark/tree/master/Output/Webfonts). At the moment there are 6 folders in there: 3 bar chart options (medium, narrow and thin), 2 dot charts (medium and small), and 1 dot line (medium).
 
 You can [see some examples of the different chart types in action on the Spark page on the After The Flood website](http://aftertheflood.co/projects/atf-spark).
 
-Click on the folder for the chart/font you want to use, and you should see 5 files in that folder. These are 5 different formats. We've used the '.woff' format, so click on that version, and you should be taken to a page which doesn't look like much (GitHub cannot show it in any way, so just shows a grey box instead). Click **Download** to download this file to your computer.
+Click on the folder for the chart/font you want to use (note that the line chart is limited to numbers between 0 and 9), and you should see 5 files in that folder. These are 5 different formats. We've used the '.woff' format, so click on that version, and you should be taken to a page which doesn't look like much (GitHub cannot show it in any way, so just shows a grey box instead). Click **Download** to download this file to your computer.
 
 Once downloaded, move the file to the same folder as the CSS file.
 
@@ -127,7 +129,7 @@ The quickest way of achieving the results above is to:
 
 1. Export [my Codepen pen on Spark](https://codepen.io/paulbradshaw/pen/zEBzmE) as a zip file (the button to export should be in the bottom right corner).
 2. Unzip the export. You should now have a folder with an `index.html` file and a `css` folder containing a `style.css` file.
-3. Download the [font file from the Spark GitHub repo](https://github.com/paulbradshaw/spark/blob/master/Output/Webfonts/Bar%20-%20medium/spark-bar-medium.woff). That link takes you to the 'spark bar medium' font, but you can also find fonts for other widths of bar chart and for line charts in [the 'Output/fonts' folder](https://github.com/paulbradshaw/spark/tree/master/Output/Webfonts)
+3. Download the [font file from the AtF Spark GitHub repo](https://github.com/aftertheflood/spark/blob/master/Output/Webfonts/Bar%20-%20medium/spark-bar-medium.woff). That link takes you to the 'spark bar medium' font, but you can also find fonts for other widths of bar chart and for line charts in [the 'Output/fonts' folder](https://github.com/aftertheflood/spark/tree/master/Output/Webfonts)
 4. Put that file in the `css` folder
 5. The chart should now be working based on the numbers in curly brackets on the HTML page. Just change those numbers to change the text - or copy and paste it (including the `<span>` ) to create new charts.
 
